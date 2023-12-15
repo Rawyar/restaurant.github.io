@@ -1,0 +1,61 @@
+body{
+    display: grid;
+    grid-template-rows: 50px 300px 50px;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas:
+    "header header header"
+    "lft md rgt"
+    "footer footer footer";
+    position: relative;
+}
+
+.header{
+    grid-area: header;
+    border: 5px solid black;
+    color: maroon;
+    font-weight: bolder;
+    font-size: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    grid-area: lft;
+}
+
+.table1{
+    position: relative;
+    top: 150px;
+    grid-area: md;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+table, tr, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+table{
+    height: 100px;
+    width: 300px;
+}
+
+.pic{
+    display: flex;
+    justify-content: center;
+    grid-area: rgt;
+}
+
+.contact{
+    position: relative;
+    top: 200px;
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
